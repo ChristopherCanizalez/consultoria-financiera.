@@ -1,246 +1,188 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <!-- Soporte de caracteres en español -->
-  <meta charset="UTF-8" />
+<!-- Definición del conjunto de caracteres para soportar acentos y caracteres especiales -->
+<meta charset="UTF-8" />
 
-  <!-- Responsive: móviles, tablets y computadoras -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Título del sitio -->
-  <title>Consultoría Financiera | Claridad para Negocios</title>
+<!-- Hace que el sitio sea responsive (adaptable a móviles, tablets y computadoras) -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <style>
-    body {
-      font-family: 'Segoe UI', Arial, sans-serif;
-      margin: 0;
-      background: #f4f6fb;
-      color: #1f2937;
-    }
 
-    /* =====================
-       HERO / ENCABEZADO
-       ===================== */
-    header {
-      background: linear-gradient(rgba(15,23,42,0.88), rgba(15,23,42,0.88)),
-        url('https://images.unsplash.com/photo-1554224155-6726b3ff858f');
-      background-size: cover;
-      background-position: center;
-      color: #fff;
-      padding: 110px 20px;
-      text-align: center;
-      animation: fadeIn 1.2s ease;
-    }
+<!-- Título que aparece en la pestaña del navegador y en Google -->
+<title>Consultoría Financiera para Pequeños Empresarios</title>
 
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
 
-    header h1 {
-      font-size: 3rem;
-      margin-bottom: 18px;
-      line-height: 1.15;
-    }
+<style>
+body {
+font-family: 'Segoe UI', Arial, sans-serif;
+margin: 0;
+background: #f4f6fb;
+color: #1f2937;
+}
 
-    header p {
-      font-size: 1.3rem;
-      max-width: 900px;
-      margin: 0 auto;
-      opacity: 0.95;
-    }
 
-    section {
-      padding: 80px 20px;
-      max-width: 1150px;
-      margin: auto;
-    }
+header {
+background: linear-gradient(rgba(15,23,42,0.88), rgba(15,23,42,0.88)),
+url('https://images.unsplash.com/photo-1554224155-6726b3ff858f');
+background-size: cover;
+background-position: center;
+color: #fff;
+padding: 110px 20px;
+text-align: center;
+animation: fadeIn 1.2s ease;
+}
 
-    h2 {
-      color: #0f172a;
-      font-size: 2.4rem;
-      margin-bottom: 40px;
-      text-align: center;
-    }
 
-    /* =====================
-       TARJETAS
-       ===================== */
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 30px;
-    }
+@keyframes fadeIn {
+from { opacity: 0; transform: translateY(20px); }
+to { opacity: 1; transform: translateY(0); }
+}
 
-    .card {
-      background: #fff;
-      padding: 35px;
-      border-radius: 20px;
-      box-shadow: 0 15px 40px rgba(0,0,0,0.08);
-      transition: transform 0.35s ease, box-shadow 0.35s ease;
-    }
 
-    .card:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 25px 60px rgba(0,0,0,0.15);
-    }
+header h1 {
+font-size: 3rem;
+margin-bottom: 18px;
+line-height: 1.15;
+}
 
-    .card img {
-      width: 100%;
-      border-radius: 14px;
-      margin-bottom: 18px;
-    }
 
-    .card h3 {
-      margin-top: 0;
-      color: #1e293b;
-      font-size: 1.4rem;
-    }
+header p {
+font-size: 1.3rem;
+max-width: 900px;
+margin: 0 auto;
+opacity: 0.95;
+}
 
-    .results .card {
-      text-align: center;
-      font-size: 1.15rem;
-      font-weight: 500;
-    }
 
-    /* =====================
-       CTA FINAL
-       ===================== */
-    .cta {
-      background: linear-gradient(135deg, #1e3a8a, #2563eb);
-      color: #fff;
-      padding: 100px 20px;
-      text-align: center;
-    }
+section {
+padding: 80px 20px;
+max-width: 1150px;
+margin: auto;
+}
 
-    .cta a {
-      display: inline-block;
-      background: #22c55e;
-      color: #022c22;
-      padding: 18px 40px;
-      border-radius: 40px;
-      text-decoration: none;
-      font-weight: bold;
-      margin-top: 30px;
-      font-size: 1.1rem;
-    }
 
-    footer {
-      background: #0f172a;
-      color: #cbd5e1;
-      text-align: center;
-      padding: 30px;
-      font-size: 0.95rem;
-    }
+h2 {
+color: #0f172a;
+font-size: 2.4rem;
+margin-bottom: 40px;
+text-align: center;
+}
 
-    /* =====================
-       BOTÓN WHATSAPP
-       ===================== */
-    .whatsapp-float {
-      position: fixed;
-      width: 62px;
-      height: 62px;
-      bottom: 22px;
-      right: 22px;
-      background-color: #25d366;
-      color: #fff;
-      border-radius: 50%;
-      font-size: 30px;
-      box-shadow: 2px 2px 15px rgba(0,0,0,0.35);
-      z-index: 1000;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-decoration: none;
-    }
 
-    .whatsapp-float:hover {
-      transform: scale(1.08);
-      background-color: #1ebe5d;
-    }
-  </style>
-</head>
-<body>
+.cards {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+gap: 30px;
+}
 
-<header>
-  <h1>Claridad financiera que se siente desde el primer momento</h1>
-  <p>
-    Acompaño a negocios en crecimiento a ordenar su dinero,
-    entender si realmente están ganando y tomar decisiones con seguridad,
-    sin tecnicismos ni confusión.
-  </p>
-  <div style="margin-top:35px; display:flex; gap:20px; justify-content:center; flex-wrap:wrap;">
-    <a href="diagnostico.html"
-       style="background:#22c55e;color:#022c22;padding:16px 34px;border-radius:40px;font-weight:bold;text-decoration:none;">
-      Quiero claridad financiera
-    </a>
-    <a href="#como-funciona"
-       style="border:2px solid #fff;color:#fff;padding:14px 32px;border-radius:40px;font-weight:bold;text-decoration:none;">
-      Cómo funciona
-    </a>
-  </div>
-</header>
 
+.card {
+background: #fff;
+padding: 35px;
+border-radius: 20px;
+box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+
+.card:hover {
+transform: translateY(-10px);
+box-shadow: 0 25px 60px rgba(0,0,0,0.15);
+}
+
+.card img {
+<h3>2️⃣ Orden y enfoque</h3>
+<p>Te ayudo a ordenar la información financiera y a enfocarte en lo que sí genera resultados, sin tecnicismos innecesarios.</p>
+</div>
+<div class="card">
+<h3>3️⃣ Decisiones con tranquilidad</h3>
+<p>Sales con claridad total para tomar decisiones, sin dudas y sin depender de múltiples opiniones.</p>
+</div>
+</div>
+</section>
+
+
+<!-- =====================
+SECCIÓN: SERVICIOS
+===================== -->
 <section>
-  <h2>¿Este acompañamiento es para ti?</h2>
-  <div class="cards">
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1515169067865-5387ec356754">
-      <h3>Comercios</h3>
-      <p>Vendes, pero no tienes certeza real de si el negocio está creciendo.</p>
-    </div>
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e">
-      <h3>Servicios</h3>
-      <p>Trabajas duro, pero necesitas claridad para planificar con seguridad.</p>
-    </div>
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f">
-      <h3>Profesionales independientes</h3>
-      <p>Quieres dejar de mezclar lo personal con el dinero del negocio.</p>
-    </div>
-  </div>
+<h2>Formas en las que puedo ayudarte</h2>
+<div class="cards">
+<div class="card">
+<img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7" alt="Diagnóstico" />
+<h3>Diagnóstico Financiero</h3>
+<p>Un análisis profesional para que entiendas tu negocio y tengas claridad inmediata sobre qué hacer.</p>
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a" alt="Acompañamiento" />
+<h3>Acompañamiento Mensual</h3>
+<p>Seguimiento continuo para mantener orden financiero y evitar volver al descontrol.</p>
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df" alt="Premium" />
+<h3>Consultoría Estratégica</h3>
+<p>Trabajo cercano para negocios que quieren tomar decisiones importantes con respaldo financiero.</p>
+</div>
+</div>
 </section>
 
-<section class="results">
-  <h2>¿Qué cambia cuando hay claridad financiera?</h2>
-  <div class="cards">
-    <div class="card">✅ Sabes cuánto ganas y cuánto puedes retirar</div>
-    <div class="card">✅ Tomas decisiones con números reales</div>
-    <div class="card">✅ Reduces estrés y trabajas con intención</div>
-    <div class="card">✅ Tu negocio empieza a crecer con orden</div>
-  </div>
+
+<!-- =====================
+SECCIÓN: GUÍA GRATUITA
+===================== -->
+<section>
+<h2>Empieza a ordenar tu negocio hoy</h2>
+<div class="cards">
+<div class="card">
+<h3>📘 Guía práctica para negocios</h3>
+<p>
+Te comparto una checklist sencilla para que identifiques si tu negocio
+está financieramente ordenado o si hay señales de alerta que debes atender.
+</p>
+<p><strong>Incluye:</strong></p>
+<ul>
+<li>✔ Señales de desorden financiero</li>
+<li>✔ Errores comunes en pequeños negocios</li>
+<li>✔ Primeros pasos para tener claridad</li>
+</ul>
+<p>
+Esta guía no reemplaza un diagnóstico profesional,
+pero te ayudará a tener una mejor visión de tu situación actual.
+</p>
+</div>
+</div>
 </section>
 
-<section id="como-funciona">
-  <h2>Mi forma de acompañarte</h2>
-  <div class="cards">
-    <div class="card">
-      <h3>1️⃣ Diagnóstico claro</h3>
-      <p>Entendemos qué está pasando realmente con tu dinero.</p>
-    </div>
-    <div class="card">
-      <h3>2️⃣ Orden y enfoque</h3>
-      <p>Organizamos lo importante sin complicaciones.</p>
-    </div>
-    <div class="card">
-      <h3>3️⃣ Decisiones con tranquilidad</h3>
-      <p>Sales con claridad y seguridad para avanzar.</p>
-    </div>
-  </div>
-</section>
 
+<!-- =====================
+LLAMADO A LA ACCIÓN
+===================== -->
 <section class="cta">
-  <h2>Cuando quieras claridad total</h2>
-  <p>El siguiente paso es un diagnóstico financiero profesional.</p>
-  <a href="diagnostico.html">Ir al Diagnóstico</a>
+<h2>Cuando quieras mayor claridad</h2>
+<p>
+Si después de revisar tu situación quieres claridad completa
+y acompañamiento profesional, el siguiente paso es un diagnóstico financiero.
+</p>
+<a href="diagnostico.html">Ir al Diagnóstico Financiero</a>
 </section>
 
+
+<!-- =====================
+PIE DE PÁGINA
+===================== -->
 <footer>
-  <p>Consultoría Financiera | Atención online | © 2026</p>
+<p>Consultoría Financiera | Atención 100% en línea para países de habla hispana | © 2026</p>
 </footer>
 
-<a href="https://wa.me/50376393562" class="whatsapp-float" target="_blank">💬</a>
+
+<!-- =====================
+BOTÓN FLOTANTE WHATSAPP
+===================== -->
+<a href="https://wa.me/50376393562" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+💬
+</a>
+
 
 </body>
 </html>
